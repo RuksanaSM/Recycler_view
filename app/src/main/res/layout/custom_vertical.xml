@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:background="@drawable/custom_ripple"
+    android:padding="5dp"
+    android:layout_height="160dp">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/game_image"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_launcher_background"
+        android:scaleType="centerCrop"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+        android:padding="10dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/game_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Game Name"
+            android:textColor="@color/purple_700"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/game_country"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Game Country"
+            android:padding="10dp"
+            android:textColor="@color/purple_700"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/game_people"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Game People"
+            android:padding="10dp"
+            android:textColor="@color/teal_700"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+</LinearLayout>
